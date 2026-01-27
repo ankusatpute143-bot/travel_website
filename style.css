@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* BACKGROUND IMAGE */
+    background-image: url("https://media.istockphoto.com/id/1223690610/photo/tropical-island-and-coral-reef-split-view-with-waterline.jpg?s=2048x2048&w=is&k=20&c=D2enQ9RX7TGmMh3rxMh8rjscXX1S5R9FvjuZusMMENs=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+header {
+    background: #008080;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+h2, h3 {
+    color: #008080;
+}
+
+#chatbot {
+    background: white;
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+    border: 2px solid #008080;
+}
+
+#chatbox {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+.userMsg {
+    text-align: right;
+    color: blue;
+    margin: 5px;
+}
+
+.aiMsg {
+    text-align: left;
+    color: green;
+    margin: 5px;
+}
+
+img {
+    margin: 10px;
+}

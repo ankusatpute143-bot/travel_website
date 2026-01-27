@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourist Places</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Explore India</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="places.html">Tourist Places</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="tips.html">Travel Tips</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Tourist Places</h2>
+    
+    <!-- Category Filter -->
+    <div class="filter-buttons">
+        <button onclick="filterCategory('All')">All</button>
+        <button onclick="filterCategory('Beach')">Beach</button>
+        <button onclick="filterCategory('Heritage')">Heritage</button>
+        <button onclick="filterCategory('City')">City</button>
+    </div>
+
+    <!-- Tourist Place Cards -->
+    <div class="place-container">
+        <!-- Goa -->
+        <div class="place-card" data-category="Beach">
+            <img src="https://www.tourmyindia.com/states/goa/image/south-goa-banner.webp" alt="Goa">
+            <h3>Goa</h3>
+            <p>Famous for beautiful beaches, nightlife, and Portuguese heritage.</p>
+            <a href="details.html">View Details</a>
+        </div>
+
+        <!-- Jaipur -->
+        <div class="place-card" data-category="Heritage">
+            <img src="https://media.istockphoto.com/id/154894958/photo/amber-fort-jaipur-india.jpg?s=612x612&w=0&k=20&c=gCNirw30cmkl7clV30l8mcbmxOk-IAoT5ACxHRBQsdA=" alt="Jaipur">
+            <h3>Jaipur</h3>
+            <p>Known as the Pink City, must-visit Amber Fort and City Palace.</p>
+            <a href="details.html">View Details</a>
+        </div>
+
+        <!-- Mumbai -->
+        <div class="place-card" data-category="City">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/40/ce/c3/mumbai-marine-drive-along.jpg?w=1200&h=1200&s=1" alt="Mumbai">
+            <h3>Mumbai</h3>
+            <p>The financial capital of India, famous for Marine Drive & Gateway of India.</p>
+            <a href="details.html">View Details</a>
+        </div>
+
+        <!-- Delhi -->
+        <div class="place-card" data-category="Heritage">
+            <img src="https://t3.ftcdn.net/jpg/04/01/43/06/360_F_401430617_QU5FmwCbN3oiysrAnVN2yXreAkbPOESe.jpg" alt="Delhi">
+            <h3>Delhi</h3>
+            <p>Historical capital with Red Fort, India Gate, and vibrant markets.</p>
+            <a href="details.html">View Details</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Travel Guide Website</p>
+</footer>
+
+<!-- Filter Script -->
+<script>
+function filterCategory(category) {
+    const cards = document.querySelectorAll('.place-card');
+    cards.forEach(card => {
+        if(category === 'All' || card.dataset.category === category) {
+            card.style.display = 'inline-block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
+
+</body>
+</html>
